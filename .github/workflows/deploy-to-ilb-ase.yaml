@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEBAPP: rj-webapp-ase
+  WEBAPP: rj-webapp
   RESOURCE_GROUP: jboss-rg
   STORAGE_ACCOUNT: jbossstoragerj  # This must be a *globally* unique name. (Only lowercase letters and numbers allowed. No spaces, dashes, underscores.)
 
