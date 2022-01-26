@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 env:
-  WEBAPP: rj-webapp
+  WEBAPP: rj-webapp-ase
   RESOURCE_GROUP: jboss-rg
   STORAGE_ACCOUNT: jbossstoragerj  # This must be a *globally* unique name. (Only lowercase letters and numbers allowed. No spaces, dashes, underscores.)
 
@@ -59,7 +59,7 @@ jobs:
       - name: Azure CLI script
         uses: azure/CLI@v1
         with:
-          azcliversion: 2.29.1
+          azcliversion: 2.29.2
           inlineScript: |
             SUBSCRIPTION=$(az account show --query id -o tsv)
             
